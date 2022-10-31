@@ -12,7 +12,7 @@ Ana sisteme GPS verisi sağlayabilmek için oluşturulan Arduino kodu ayrıca d�
 
 > Arduino Uno
 
-.> Ublox Neo6MV2 GPS Module
+> Ublox Neo6MV2 GPS Module
 
 > DHT11 Temprature Sensor
 
