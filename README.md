@@ -20,4 +20,4 @@ Ana sisteme GPS verisi sağlayabilmek için oluşturulan Arduino kodu ayrıca d�
 
 
 ### Bazı Görseller
-![Display](https://github.com/ismaildrcn/totar/blob/master/images/dashboard.png)
+![Display](https://github.com/ismaildrcn/Arduino-GPS-TFT-DHT11/blob/master/images/display.jpg)
