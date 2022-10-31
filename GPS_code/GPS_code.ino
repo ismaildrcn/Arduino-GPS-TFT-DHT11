@@ -208,7 +208,7 @@ void displayInfo()
       delay(300);
     }
     // <----- COUNTER ----->
-
+    
  }
  else
  {
