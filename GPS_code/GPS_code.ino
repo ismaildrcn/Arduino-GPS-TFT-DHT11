@@ -165,6 +165,39 @@ void displayInfo()
     tft.print ("DHT11");
     // <----- DHT Title ----->
    
+    // <----- TIME ----->
+    tft.setTextColor(ST7735_WHITE);
+    tft.setTextSize(2);
+    tft.fillRect(0,124,128,26,0x2A69);
+    tft.setCursor (35, 125);
+    if (gps.time.isValid())
+    {
+      if (gps.time.hour() < 10) tft.print(F("0"));
+      tft.print(gps.time.hour()+3);
+      tft.print(F(":"));
+      if (gps.time.minute() < 10) tft.print(F("0"));
+      tft.print(gps.time.minute());
+    }
+    else
+    {
+      tft.print(F("INVALID"));
+    }
+    //tft.print (gps.time);
+    tft.setTextSize(1);
+    tft.setCursor (35, 141);
+    if (gps.date.isValid())
+    {
+      tft.print(gps.date.day());
+      tft.print(F("/"));
+      tft.print(gps.date.month());
+      tft.print(F("/"));
+      tft.print(gps.date.year());
+    }
+    else
+    {
+      tft.print(F("INVALID"));
+    }
+    // <----- TIME ----->
   
     // <----- COUNTER ----->
     int a = 1;
